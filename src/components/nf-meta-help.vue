@@ -11,7 +11,7 @@
             <nfInput :modelValue="modelValue[helpMeta[item].colName]" :meta="helpMeta[item]" @getvalue="sendValue"/>
             {{helpMeta[item].title}}
           </td>
-      </tr>
+        </tr>
       </table>
     </div>
     <div align="left" style="background-color:#FFFFEE;height:600px;width:400px;float:left;">
