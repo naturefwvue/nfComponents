@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link>|
       <router-link to="/form">表单</router-link>|
       <router-link to="/formHelp">表单工具</router-link>|
-      <router-link to="/metaHelp">meta工具</router-link>
+      <router-link to="/metaHelp">meta工具</router-link>|
+      <router-link to="/formDemo">表单演示</router-link>
     </div>
     <router-view/>
   </div>
