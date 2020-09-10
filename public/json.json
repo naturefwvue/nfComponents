@@ -1,0 +1,14 @@
+{
+  "controlId": 101,
+  "controlType": 100,
+  "colName": "abc",
+  "isClear": true,
+  "disabled": false,
+  "required": true,
+  "class": "1",
+  "title": "1",
+  "rows": 5,
+  "cols": 50,
+  "placeholder": "请输入",
+  "readonly": false
+}
