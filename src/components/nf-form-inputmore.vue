@@ -52,7 +52,7 @@ export default {
         controlId: 1101,
         controlType: 131,
         colName: '行数',
-        min: 1,
+        min: 0,
         max: 200,
         step: 1
       },
@@ -71,13 +71,8 @@ export default {
         size: 10
       },
       // 备选项的值
-      optionNumber: 2,
-      reOptions: [
-        {
-          value: 1,
-          title: ''
-        }
-      ],
+      optionNumber: 0,
+      reOptions: [],
       type: {
         100: 'textarea' // 多行文本框
       }

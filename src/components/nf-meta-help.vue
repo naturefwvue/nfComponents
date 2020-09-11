@@ -15,7 +15,7 @@
       </table>
     </div>
     <div align="left" style="background-color:#FFFFEE;height:600px;width:400px;float:left;">
-      测试：<nfInput v-model="testValue" :meta="reMeta"  />
+      测试：<nfInput v-model="testValue" :meta="reMeta"  /> ==》 {{testValue}}
       <div align="left" style="background-color:#FFEEEE;height:400px;width:400px;clear:both">
         {<br>
           <span v-for="(item, key, index) in tmpMeta" :key="index">
@@ -25,7 +25,7 @@
             <span v-if="typeof(item) ==='object'">
               &nbsp;&nbsp;"{{key}}": [<br>
               <span v-for="(opt, index) in item" :key="'opt'+index">&nbsp;&nbsp;&nbsp;&nbsp;{{opt}}, <br></span>
-              &nbsp;&nbsp;]
+              &nbsp;&nbsp;]<br>
             </span>
           </span>
         }
