@@ -72,14 +72,9 @@
           "autocomplete": "on",
           "size": 20,
           "maxlength": 100,
-          "min": "",
-          "max": "",
-          "step": "1",
-          "rows": "",
-          "cols": "",
-          "optionKey": "",
-          "optionList": "",
-          "multiple": ""
+          "min": "0",
+          "max": "9999",
+          "step": "1"
         },
         "102": {  
           "controlId": 102,

@@ -128,11 +128,11 @@ export default {
   },
   methods: {
     sendValue: function (value, colName) {
-      // 根据字段名，设置
+      // 根据字段名判断，设置需要的属性
       if (colName === 'controlType') {
         this.trList = this.type[value]
       }
-      // 给对应字段赋值
+      // 给对应属性赋值
       this.baseMeta[colName] = value
 
       // 根据类型拼接对象
@@ -142,6 +142,7 @@ export default {
         var key = this.helpMeta[item].colName
         this.tmpMeta[key] = this.baseMeta[key]
       }
+      // 提交给父级组件
       this.$emit('update:modelValue', this.tmpMeta)
     }
   }
