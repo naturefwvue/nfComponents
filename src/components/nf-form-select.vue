@@ -34,7 +34,7 @@ export default {
         return {
           controlId: Number, // 编号，区别同一个表单里的其他控件
           controlType: Number, // 用类型编号表示type
-          colName: String, // 中文名称
+          colName: String, // 字段名称
           isClear: {
             // isClear  连续添加时是否恢复默认值
             type: Boolean,
@@ -50,16 +50,9 @@ export default {
             type: Boolean,
             default: true
           },
-          class: String, // 'cssTxt input_t1'
-          title: String // 提示信息
+          class: String,
+          title: String // 中文名称
         }
-      }
-    }
-  },
-  data: () => {
-    return {
-      type: {
-        160: 'color'
       }
     }
   },
