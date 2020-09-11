@@ -1,17 +1,17 @@
 /** 表单元素的综合组件，根据类型自动加载相应的组件 */
 <template>
   <span class="hello">
-    <nfInput v-if="meta.controlType === 100" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfInput v-if="meta.controlType == 100" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfArea v-else-if="meta.controlType <= 119" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfNumber v-else-if="meta.controlType <= 139" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfDatetime v-else-if="meta.controlType <= 149" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfUpload v-else-if="meta.controlType <= 159" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfColor v-else-if="meta.controlType === 160" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfCheck v-else-if="meta.controlType === 180" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfChecks v-else-if="meta.controlType === 182" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfRadios v-else-if="meta.controlType === 183" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfSelect v-else-if="meta.controlType === 190" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfInputMore v-else-if="meta.controlType === 200" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfColor v-else-if="meta.controlType == 160" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfCheck v-else-if="meta.controlType == 180" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfChecks v-else-if="meta.controlType == 182" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfRadios v-else-if="meta.controlType == 183" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfSelect v-else-if="meta.controlType == 190" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfInputMore v-else-if="meta.controlType == 200" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
   </span>
 </template>
 

@@ -1,9 +1,9 @@
 /** 下拉列表框，多选的那个再考虑考虑 */
 <template>
-  <select  :id="'c'+meta.controlId"
+  <select :id="'c'+meta.controlId"
     :name="'c'+meta.controlId"
     :class="meta.class"
-    :multiple="meta.controlType === 151"
+    :multiple="meta.controlType === 191"
     :colName="meta.colName"
     @change="myInput"
     >
@@ -66,6 +66,9 @@ export default {
   methods: {
     myInput: function (e) {
       var returnValue = event.target.value
+      if (!isNaN(returnValue)) {
+        returnValue = parseInt(returnValue)
+      }
       var colName = event.target.getAttribute('colname')
       this.$emit('update:modelValue', returnValue) // 返回给调用者
       this.$emit('getvalue', returnValue, colName) // 返回给中间组件

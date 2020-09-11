@@ -86,6 +86,9 @@ export default {
   methods: {
     myInput: function (e) {
       var returnValue = event.target.value
+      if (returnValue.length > 0) {
+        returnValue = parseFloat(returnValue)
+      }
       var colName = this.meta.colName // event.target.getAttribute('colname')
       this.$emit('update:modelValue', returnValue) // 返回给调用者
       this.$emit('getvalue', returnValue, colName) // 返回给中间组件
