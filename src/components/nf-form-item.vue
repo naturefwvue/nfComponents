@@ -6,12 +6,12 @@
     <nfNumber v-else-if="meta.controlType <= 139" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfDatetime v-else-if="meta.controlType <= 149" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfUpload v-else-if="meta.controlType <= 159" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfColor v-else-if="meta.controlType == 160" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfCheck v-else-if="meta.controlType == 180" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfChecks v-else-if="meta.controlType == 182" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfRadios v-else-if="meta.controlType == 183" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfColor v-else-if="meta.controlType === 160" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfCheck v-else-if="meta.controlType === 180" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfChecks v-else-if="meta.controlType === 182" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfRadios v-else-if="meta.controlType === 183" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfSelect v-else-if="meta.controlType <= 191" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfInputMore v-else-if="meta.controlType == 200" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfInputMore v-else-if="meta.controlType === 200" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
   </span>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div><h1>表单meta生成工具</h1></div>
+    <div><h1>表单meta生成工具1</h1></div>
     <div style="background-color:#dddddd;height:600px;width:400px;float:left;">
         <table>
         <tr v-for="item in metaInfo" :key="item.controlId">

@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    v-for="a in 'abe'"
-    <nfInput v-model="title" :meta="metaInfo"  />
+    <nfInput v-model="value" :meta="metaInfo"  /> {{value}}
     <nfHelp v-model="metaInfo" />
   </div>
 </template>
@@ -19,24 +18,16 @@ export default {
     nfHelp,
     nfInput
   },
-  data: () => {
-    return {
-      a: '11'
-    }
-  },
   setup () {
-    // const json = require('../../public/json.json')
-    // alert(json.controlId)
-    const title = ref('返回json')
+    const value = ref('')
     const metaInfo = ref({
       controlId: 100,
       controlType: 101,
       colName: 'controlId'
     })
-    // alert('setup:' + value.value)
 
     return {
-      title,
+      value,
       metaInfo
     }
   }
