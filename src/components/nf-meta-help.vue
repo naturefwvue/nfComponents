@@ -14,9 +14,9 @@
         </tr>
       </table>
     </div>
-    <div align="left" style="background-color:#FFFFEE;height:600px;width:400px;float:left;">
+    <div align="left" style="padding:5px;background-color:#FFFFEE;height:600px;width:400px;float:left;">
       测试：<nfInput v-model="testValue" :meta="reMeta"  /> ==》 {{testValue}}
-      <div align="left" style="background-color:#FFEEEE;height:400px;width:400px;clear:both">
+      <div align="left" style="padding:15px;background-color:#FFEEEE;height:400px;width:400px;clear:both">
         {<br>
           <span v-for="(item, key, index) in tmpMeta" :key="index">
             <span v-if="typeof item === 'number' && !isNaN(item)">&nbsp;&nbsp;"{{key}}": {{item}}, <br></span>
@@ -74,35 +74,38 @@ export default {
       helpMeta: {}, // 绑定控件的
       reMeta: { // 固定属性的
         controlId: 101,
-        controlType: 100,
         colName: 'abc',
+        controlType: 101,
         isClear: true,
+        defaultValue: '',
+        autofocus: false,
         disabled: false,
         required: true,
+        readonly: false,
         pattern: '',
         class: '',
-        title: '',
-        rows: 5,
-        cols: 50,
         placeholder: '请输入',
-        readonly: false,
+        title: '',
+        autocomplete: 'on',
         size: 10,
         maxlength: 10,
-        autocomplete: 'on',
+        min: 0,
+        max: 9999,
+        step: 1,
+        rows: 5,
+        cols: 50,
         optionKey: 'beixuan',
         optionList: []
       },
       tmpMeta: {}, // 按需生成属性的
-      trList: [103, 104, 105, 106, 107, 108, 109, 110, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123],
+      trList: [103],
       type: {},
       numberList: []
     }
   },
   created: function () {
     // 读取json
-    // alert('created')
     const json = require('../components/metahelp.json')
-    // alert(json.helpMeta[103].controlId)
     // 给data赋值
     this.helpMeta = json.helpMeta
     this.helpMeta[103].optionList = json.dic.ControlTypeList
@@ -132,7 +135,6 @@ export default {
       this.$emit('update:modelValue', this.aa) // 返回给调用者
     },
     sendValue: function (value, colName) {
-      // alert(this.reMeta)
       // 根据字段名，设置
       // alert(colName)
       if (colName === 'controlType') {
@@ -149,9 +151,6 @@ export default {
         this.tmpMeta[key] = this.reMeta[key]
       }
       this.$emit('update:modelValue', this.tmpMeta)
-    },
-    myload: function () {
-      // alert(event)
     }
   }
 }

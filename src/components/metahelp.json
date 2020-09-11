@@ -268,15 +268,19 @@
         "114": {  
           "controlId": 114,
           "colName": "autocomplete",
-          "controlType": 180,
+          "controlType": 183,
           "isClear": false,
           "class": "",
           "title": "",
           "autocomplete": "on",
           "optionList": [{
-            "value": 1,
-            "title": "自动提示"
-          }]
+            "value": "on",
+            "title": "打开"
+            },
+            {
+              "value": "off",
+              "title": "关闭"
+            }]
         },
         "115": {  
           "controlId": 111,
