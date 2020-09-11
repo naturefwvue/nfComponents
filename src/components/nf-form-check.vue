@@ -11,6 +11,7 @@
           :value="item.value"
           :checked="modelValue === 'true'||modelValue"
           :disabled="meta.disabled"
+          :autofocus="meta.autofocus"
           :key="'chks'+item.value"
           @input="myInput"
         >
@@ -41,6 +42,10 @@ export default {
             default: false
           },
           disabled: { // 是否禁用
+            type: Boolean,
+            default: false
+          },
+          autofocus: { // 是否自动获得焦点
             type: Boolean,
             default: false
           },
