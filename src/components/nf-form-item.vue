@@ -10,7 +10,7 @@
     <nfCheck v-else-if="meta.controlType == 180" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfChecks v-else-if="meta.controlType == 182" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfRadios v-else-if="meta.controlType == 183" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
-    <nfSelect v-else-if="meta.controlType == 190" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
+    <nfSelect v-else-if="meta.controlType <= 191" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
     <nfInputMore v-else-if="meta.controlType == 200" :modelValue="modelValue" @getvalue="sendValue" :meta="meta"/>
   </span>
 </template>

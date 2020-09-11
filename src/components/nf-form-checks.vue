@@ -48,6 +48,10 @@ export default {
             type: Boolean,
             default: true
           },
+          max: { // 最多选择数量，0表示不限制
+            type: Number,
+            default: 0
+          },
           class: String, // 'cssTxt input_t1'
           title: String // 中文名称
         }
