@@ -37,24 +37,20 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import { ref } from 'vue'
 // import nfHelp from '@/components/nf-meta-help.vue'
 import nfInput from '@/components/nf-form-item.vue'
 
 export default {
-  name: 'FormHelp',
+  name: 'FormDemo',
   components: {
-    // nfFormItem,
     // nfHelp,
     nfInput
   },
   setup () {
     const json = require('./FormDemo.json') // 加载meta信息，json格式
-    // alert(json.metaForm[1000])
     const modelValue = ref({}) // 放数据的model
     const metaInfo = ref(json.companyForm) // 表单需要的meta信息
-    // alert(metaInfo.value[1000].colName)
     const myClick = (key) => {
       // 更换表单的meta
       metaInfo.value = json[key]
@@ -66,7 +62,6 @@ export default {
       }
     }
     myClick('companyForm')
-    // alert(modelValue)
     return {
       modelValue,
       metaInfo,

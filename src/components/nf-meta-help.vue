@@ -17,9 +17,9 @@
     </div>
     <div align="left" style="padding:5px;background-color:#FFFFEE;height:600px;width:400px;float:left;">
       <!--效果和json-->
-      测试：<nfInput v-model="testValue" :meta="baseMeta"  /> ==》 {{testValue}}
+      测试2：<nfInput v-model="testValue" :meta="baseMeta"  /> ==》 {{testValue}}
       <div align="left" style="padding:15px;background-color:#FFEEEE;height:400px;width:400px;clear:both">
-        {<br>
+        "{{tmpMeta.controlId}}": {<br>
           <span v-for="(item, key, index) in tmpMeta" :key="index">
             <span v-if="typeof item === 'number' && !isNaN(item)">&nbsp;&nbsp;"{{key}}": {{item}}, <br></span>
             <span v-if="typeof item === 'string'">&nbsp;&nbsp;"{{key}}": "{{item}}", <br></span>

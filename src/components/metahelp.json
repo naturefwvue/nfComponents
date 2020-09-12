@@ -58,7 +58,7 @@
         "101": {  
           "controlId": 101,
           "colName": "controlId",
-          "controlType": 101,
+          "controlType": 131,
           "isClear": false,
           "defaultValue": "",
           "autofocus": false,
@@ -70,8 +70,6 @@
           "placeholder": "请输入",
           "title": "组件编号",
           "autocomplete": "on",
-          "size": 20,
-          "maxlength": 100,
           "min": "0",
           "max": "9999",
           "step": "1"
