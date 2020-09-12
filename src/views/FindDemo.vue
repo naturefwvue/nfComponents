@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>表单演示333</h1>
+    <h1>查询演示</h1>
     <div style="background-color:#dddddd;height:600px;width:100px;float:left;">
       <a href="#" @click="myClick('companyForm')">公司信息</a> <br>
       <a href="#" @click="myClick('personForm')">员工信息</a>
