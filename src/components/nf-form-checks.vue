@@ -1,9 +1,8 @@
 /**多选组，返回逗号连接的value值 */
 <template>
-  <span>
-    <label role="checkbox" v-for="item in meta.optionList"
-      :class="meta.class"
-      :key="'lblchks'+item.value">
+<div>
+  <div style="float:left;width:90px;" v-for="item in meta.optionList" :key="'lblchks'+item.value">
+    <label role="checkbox" :class="meta.class" >
         <input  :id="'c'+meta.controlId"
           type="checkbox"
           :name="'c'+meta.controlId"
@@ -16,7 +15,8 @@
         >
         <span>{{item.title}}</span>
     </label>
-  </span>
+  </div>
+</div>
 </template>
 
 <script>

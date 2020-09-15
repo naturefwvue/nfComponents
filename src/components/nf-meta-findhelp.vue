@@ -75,13 +75,6 @@ export default {
         controlId: 101,
         colName: 'abc',
         controlType: 101,
-        isClear: true,
-        defaultValue: '',
-        autofocus: false,
-        disabled: false,
-        required: true,
-        readonly: false,
-        pattern: '',
         class: '',
         placeholder: '请输入',
         title: '',
@@ -93,8 +86,10 @@ export default {
         step: 1,
         rows: 5,
         cols: 50,
-        optionKey: 'beixuan',
-        optionList: []
+        optionKey: '',
+        optionList: [],
+        findKind: '401',
+        tdCount: 1
       },
       tmpMeta: {}, // 按需生成属性的
       trList: [103],

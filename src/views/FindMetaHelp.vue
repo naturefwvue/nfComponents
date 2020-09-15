@@ -23,7 +23,15 @@ export default {
     const metaInfo = ref({
       controlId: 100,
       controlType: 101,
-      colName: 'controlId'
+      colName: 'controlId',
+      title: '',
+      autocomplete: 'on',
+      size: 10,
+      maxlength: 10,
+      optionKey: '',
+      optionList: [],
+      findKind: '401',
+      tdCount: 1
     })
 
     return {

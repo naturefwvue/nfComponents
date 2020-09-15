@@ -1,5 +1,15 @@
 {
-    "companyForm":{
+    "companyFind":{
+      "findMeta":{
+        "quickFind":[],
+        "allFind":[],
+        "colCount":4,
+        "customer":[{
+          "name":"",
+          "item":[]
+        }]
+      },
+      "findItem":{
         "1000":{
             "controlId": 1000,
             "colName": "companyName",
@@ -10,7 +20,8 @@
             "size": 10,
             "maxlength": 100,
             "optionList": [],
-            "FindKind":"401,402"
+            "findKind":"402",
+            "tdCount":1
         },
         "1001":{
             "controlId": 1001,
@@ -24,7 +35,7 @@
             "step": 1,
             "maxlength": 6,
             "optionList": [] ,
-            "FindKind":"401,402"
+            "findKind":"401"
         },
         "1002":{
             "controlId": 1002,
@@ -37,7 +48,7 @@
             "size": 10,
             "maxlength": 50,
             "optionList": [] ,
-            "FindKind":"401,402"
+            "findKind":"403"
         },
         "1003":{
             "controlId": 1003,
@@ -49,90 +60,87 @@
             "size": 10,
             "maxlength": 50,
             "optionList": [],
-            "FindKind":"401,402"
+            "findKind":"404"
         },
         "1004": {
-            "controlId": "1004",
-            "colName": "address",
-            "controlType": 101,
-            "class": "",
-            "placeholder": "请输入公司地址",
-            "title": "公司地址",
-            "size": 10,
-            "maxlength": 50,
-            "optionKey": "",
-            "optionList": [
-            ],
-            "FindKind":"401,402"
-          },
-          "1005": {
-            "controlId": "1005",
-            "colName": "telphone",
-            "controlType": 103,
-            "placeholder": "请输入公司电话",
-            "title": "公司电话",
-            "size": 10,
-            "maxlength": 50,
-            "optionKey": "",
-            "optionList": [
-            ],
-            "FindKind":"401,402"
-          },
-          "1006": {
-            "controlId": "1006",
-            "colName": "URL",
-            "controlType": 105,
-            "class": "",
-            "placeholder": "https://www.",
-            "title": "公司网址",
-            "autocomplete": "on",
-            "size": 10,
-            "maxlength": 50,
-            "optionKey": "",
-            "optionList": [
-            ],
-            "FindKind":"401,402"
-          },
-          "1007": {
-            "controlId": "1007",
-            "colName": "Email",
-            "controlType": 104,
-            "class": "",
-            "placeholder": "@",
-            "title": "公司邮件",
-            "size": 10,
-            "maxlength": 50,
-            "optionKey": "",
-            "optionList": [
-            ],
-            "FindKind":"401,402"
-          },
-          "1008": {
-            "controlId": 1008,
-            "colName": "type",
-            "title": "公司类型",
-            "controlType": 190,
-            "class": "",
-            "optionList": [
-              { "value": 1, "title": "有限责任公司" },
-              { "value": 2, "title": "股份有限责任公司" },
-              { "value": 3, "title": "个人独资企业" },
-              { "value": 4, "title": "合伙企业" },
-              { "value": 5, "title": "个体工商户" }
-            ],
-            "FindKind":"401,402"
-          },
-          "1009": {
-            "controlId": 1009,
-            "colName": "createDate",
-            "controlType": 140,
-            "class": "",
-            "title": "成立日期",
-            "min": "1950-01-01",
-            "max": "2999-12-31",
-            "step": 1,
-            "FindKind":"401,402"
-          }
+          "controlId": "1004",
+          "colName": "address",
+          "controlType": 101,
+          "class": "",
+          "placeholder": "请输入公司地址",
+          "title": "公司地址",
+          "size": 10,
+          "maxlength": 50,
+          "optionKey": "",
+          "optionList": [],
+          "findKind":"405"
+        },
+        "1005": {
+          "controlId": "1005",
+          "colName": "telphone",
+          "controlType": 103,
+          "placeholder": "请输入公司电话",
+          "title": "公司电话",
+          "size": 10,
+          "maxlength": 50,
+          "optionKey": "",
+          "optionList": [],
+          "findKind":"401,402"
+        },
+        "1006": {
+          "controlId": "1006",
+          "colName": "URL",
+          "controlType": 105,
+          "class": "",
+          "placeholder": "https://www.",
+          "title": "公司网址",
+          "autocomplete": "on",
+          "size": 10,
+          "maxlength": 50,
+          "optionKey": "",
+          "optionList": [],
+          "findKind":"401,402"
+        },
+        "1007": {
+          "controlId": "1007",
+          "colName": "Email",
+          "controlType": 104,
+          "class": "",
+          "placeholder": "@",
+          "title": "公司邮件",
+          "size": 10,
+          "maxlength": 50,
+          "optionKey": "",
+          "optionList": [],
+          "findKind":"402"
+        },
+        "1008": {
+          "controlId": 1008,
+          "colName": "type",
+          "title": "公司类型",
+          "controlType": 190,
+          "class": "",
+          "optionList": [
+            { "value": 1, "title": "有限责任公司" },
+            { "value": 2, "title": "股份有限责任公司" },
+            { "value": 3, "title": "个人独资企业" },
+            { "value": 4, "title": "合伙企业" },
+            { "value": 5, "title": "个体工商户" }
+          ],
+          "findKind":"401"
+        },
+        "1009": {
+          "controlId": 1009,
+          "colName": "createDate",
+          "controlType": 140,
+          "class": "",
+          "title": "成立日期",
+          "min": "1950-01-01",
+          "max": "2999-12-31",
+          "step": 1,
+          "findKind":"423"
+        }
+      }
     },
     "personForm":{
         "2000":{
